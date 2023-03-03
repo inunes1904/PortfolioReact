@@ -2,11 +2,11 @@
 
 In this react js project, I'm going to create a fully responsive personal portfolio website! 
 
-## TOPICS
+## Stack
 
-▶️ React
+▶️ React (useState hooks, React Icons)
 
-▶️ CSS3 
+▶️ CSS3 (Modern & Responsive Design with CSS3)
 
 ▶️ SwiperJS (carousels/slides)
 
