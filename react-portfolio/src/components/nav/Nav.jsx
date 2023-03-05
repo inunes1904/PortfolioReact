@@ -1,9 +1,9 @@
 import React from 'react'
-import './nav.css'
 import {AiOutlineHome, AiOutlineInfoCircle, AiOutlineMessage } from 'react-icons/ai'
 import {GiBookshelf } from 'react-icons/gi'
 import {RiServiceLine} from 'react-icons/ri'
 import {useState} from 'react'
+import './nav.css'
 
 const Nav = () => {
 const [activeNav, setActiveNav] = useState('#')
@@ -21,10 +21,14 @@ const [activeNav, setActiveNav] = useState('#')
       className={activeNav === '#experience' ? 'active' : ''}>  
           <GiBookshelf /> 
       </a>
-      <a href="#services"> 
+      <a href="#services" onClick={()=> setActiveNav('#services')}
+      className={activeNav === '#services' ? 'active' : ''}>   
         <RiServiceLine /> 
       </a>
-      <a href="#contact"> <AiOutlineMessage /> </a>
+      <a href="#contact" onClick={()=> setActiveNav('#contact')}
+      className={activeNav === '#contact' ? 'active' : ''}> 
+      <AiOutlineMessage /> 
+      </a>
     </nav>
   )
 }
