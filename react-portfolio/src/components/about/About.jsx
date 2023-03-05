@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about_500X_500.jpg";
+import ME from "../../assets/me-about_300X_300.jpg";
 import { FaLaptopCode } from "react-icons/fa";
 import { MdSchool } from "react-icons/md";
 import { RiGameFill } from "react-icons/ri";
@@ -56,7 +56,7 @@ const About = () => {
           <a href="#contact" className="btn btn-primary">Let's Chat</a>
         </div>
       </div>
-
+      
     </section>
   );
 };
