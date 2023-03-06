@@ -70,6 +70,13 @@
     color: var(--color-light);
 }
 
+
+.about-img{
+    height:400px;
+    width:400px;
+    border-radius: 2rem;
+
+}
 /* media queries */
 
 /* medium devices Tablets */
@@ -85,6 +92,21 @@
     .about__content p {
         margin:1rem 0 1.5rem;
     }
+    .about-img{
+        width:328px;
+        height:353px;;
+        border-radius: 2rem;
+    }
+    .about__me-image{
+        border-radius: 2rem;
+        overflow: hidden;
+        transform: rotate(10deg);
+        transition:var(--transition);
+        height:328px;
+        width:500px;
+        border-radius: 2rem;
+    }
+  
   }
   
   /* small devices mobile phones */
@@ -103,6 +125,20 @@
         margin: 1.5rem 0;
     }
 
+    .about-img{
+        width:300px;
+        height:300px;;
+        border-radius: 2rem;
+    }
+    .about__me-image{
+        border-radius: 2rem;
+        overflow: hidden;
+        transform: rotate(10deg);
+        transition:var(--transition);
+        height:250px;
+        width:250px;
+        border-radius: 2rem;
+    }
+  
     
- 
   }

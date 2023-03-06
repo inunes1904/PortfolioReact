@@ -2,8 +2,8 @@
 .portfolio__container {
     display: grid;
     grid-area: auto;
-    grid-template-columns:repeat(2, 1fr);
-    gap:2.5rem;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1rem;
 }
 
 .portfolio__item{
@@ -20,8 +20,9 @@
 }
 
 .portfolio__item-image {
-    border-radius:2rem;
+    border-radius:1rem;
     overflow:hidden;
+ 
 }
 
 .portfolio__item h3 {
@@ -34,7 +35,10 @@
     margin-bottom: 0.5rem;
 }
 
-
+.port-image{
+    border-radius: 2rem;
+    width:100%;
+}
 /* media queries */
 
 /* medium devices Tablets */
@@ -43,8 +47,11 @@
     grid-template-columns: 1fr;
     gap:1.2rem;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
+  .about-img{
+    height:325px;
+}
   }
   
   /* small devices mobile phones */
@@ -54,5 +61,6 @@
         gap:1.2rem;
         padding-left: 10px;
         padding-right: 10px;
+        aspect-ratio: 0.5/0.5;
       }
   }
