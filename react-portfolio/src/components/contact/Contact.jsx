@@ -2,8 +2,18 @@ import React from 'react'
 import './contact.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {ImWhatsapp} from 'react-icons/im'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('email-portfolio', 'template_6v509vg', form.current, 'GsY3AM3daZhOXooWe')
+    e.target.reset();
+  };
   return (
     <section id="contact" >
       <h5>Get in Touch</h5>
@@ -25,7 +35,7 @@ const Contact = () => {
             </article>
         </div>
        
-       <form action="">
+       <form ref={form} onSubmit={sendEmail}>
         <input type="text" required name='name' placeholder='First and Last Names'/>
         <input type="email" name='email' placeholder='Your email' />
         <textarea name="message" rows="7" placeholder='Your message'></textarea>
