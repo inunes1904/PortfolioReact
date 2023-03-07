@@ -3,6 +3,7 @@ import {AiOutlineHome, AiOutlineInfoCircle, AiOutlineMessage } from 'react-icons
 import {GiBookshelf } from 'react-icons/gi'
 import {RiServiceLine} from 'react-icons/ri'
 import {useState} from 'react'
+import {SiPolywork} from 'react-icons/si'
 import './nav.css'
 
 const Nav = () => {
@@ -21,8 +22,12 @@ const [activeNav, setActiveNav] = useState('#')
       className={activeNav === '#experience' ? 'active' : ''}>  
           <GiBookshelf /> 
       </a>
-      <a href="#services" onClick={()=> setActiveNav('#services')}
-      className={activeNav === '#services' ? 'active' : ''}>   
+      <a href="#portfolio" onClick={()=> setActiveNav('#portfolio')}
+      className={activeNav === '#portfolio' ? 'active' : ''}> 
+      <SiPolywork /> 
+      </a>
+      <a href="#testimonials" onClick={()=> setActiveNav('#testimonials')}
+      className={activeNav === '#testimonials' ? 'active' : ''}>   
         <RiServiceLine /> 
       </a>
       <a href="#contact" onClick={()=> setActiveNav('#contact')}

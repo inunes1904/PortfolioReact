@@ -4,8 +4,8 @@ import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
-
-
+import IMG5 from '../../assets/portfolio5.jpg'
+import IMG6 from '../../assets/portfolio6.jpg'
 
 const Portfolio = () => {
   return (
@@ -59,6 +59,27 @@ const Portfolio = () => {
           </div> 
         </article>
 
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img className='port-image' src={IMG5} alt="Project Title" />
+          </div>
+          <h3>Talking Duck</h3>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/inunes1904/talkduck" target="_blank" className="btn">GitHub</a>
+            <a href="https://talkduck.ivo-nunes.com/" target="_blank" className="btn btn-primary">Live Demo</a>
+          </div> 
+        </article>
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img className='port-image' src={IMG6} alt="Project Title" />
+          </div>
+          <h3>Codigotchi</h3>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/inunes1904/codigotchi" target="_blank" className="btn">GitHub</a>
+            <a href="https://codigotchi.ivo-nunes.com/" target="_blank" className="btn btn-primary">Live Demo</a>
+          </div> 
+        </article>
 
       </div>
    
