@@ -81,6 +81,17 @@ const Portfolio = () => {
           </div> 
         </article>
 
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img className='port-image' src={IMG6} alt="Project Title" />
+          </div>
+          <h3>Simon Game</h3>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/inunes1904/SimonGame" target="_blank" className="btn">GitHub</a>
+            <a href="https://simongame.ivo-nunes.com/" target="_blank" className="btn btn-primary">Live Demo</a>
+          </div> 
+        </article>
+
       </div>
    
     </section>
